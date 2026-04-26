@@ -3,6 +3,7 @@ packages:
 
 esphome:
   project:
+    name: ElevatedSensors.BedPresenceMk1
     version: nightly
 
 update:
