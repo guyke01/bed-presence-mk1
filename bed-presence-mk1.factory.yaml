@@ -28,8 +28,7 @@ update:
   - platform: http_request
     id: update_http_request
     name: Firmware
-    #source: https://docs.elevatedsensors.com/firmware/bed-presence-mk1/latest/bed-presence-mk1.manifest.json
-    source: https://elevatedsensorsdocs.netlify.app/firmware/bed-presence-mk1/latest/bed-presence-mk1.manifest.json
+    source: https://docs.elevatedsensors.com/firmware/bed-presence-mk1/latest/bed-presence-mk1.manifest.json
     update_interval: 25h
 
 http_request:
