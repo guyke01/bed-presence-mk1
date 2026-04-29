@@ -10,7 +10,7 @@ jobs:
       contents: write
       pull-requests: write
       pages: write
-      id_token: write
+      id-token: write
     uses: ElevatedSensors/workflows/.github/workflows/firmware-publish.yml@main
     with:
       product-name: "bed-presence-mk1"
