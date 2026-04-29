@@ -1,10 +1,6 @@
 packages:
   factory: !include bed-presence-mk1.factory.yaml
 
-esphome:
-  project:
-    version: nightly
-
 update:
   - id: !extend update_http_request
     source: https://elevatedsensors.github.io/bed-presence-mk1/bed-presence-mk1.manifest.json
