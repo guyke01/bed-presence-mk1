@@ -1,8 +1,8 @@
 substitutions:
   sensor_gpio_left: GPIO10
   sensor_gpio_right: GPIO20
-  left_bed_sensor_name: left
-  right_bed_sensor_name: right
+  left_bed_sensor_name: Left
+  right_bed_sensor_name: Right
 
 packages:
   diagnostics: !include
