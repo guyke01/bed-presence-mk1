@@ -1,6 +1,10 @@
 substitutions:
   sensor_gpio_left: GPIO10
   sensor_gpio_right: GPIO20
+  left_bed_sensor_name: left
+  left_bed_sensor_friendly_name: Left
+  right_bed_sensor_name: right
+  right_bed_sensor_friendly_name: Right
 
 packages:
   diagnostics: !include
@@ -14,15 +18,15 @@ packages:
   left_bed_sensor: !include
     file: sensor.yaml
     vars:
-      sensor_name: Left
-      sensor_id: left
+      sensor_name: ${left_bed_sensor_friendly_name}
+      sensor_id: ${left_bed_sensor_name}
       sensor_gpio: ${sensor_gpio_left}
 
   right_bed_sensor: !include
     file: sensor.yaml
     vars:
-      sensor_name: Right
-      sensor_id: right
+      sensor_name: ${right_bed_sensor_friendly_name}
+      sensor_id: ${right_bed_sensor_name}
       sensor_gpio: ${sensor_gpio_right}
 
 binary_sensor:

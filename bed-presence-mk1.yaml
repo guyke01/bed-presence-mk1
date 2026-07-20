@@ -46,6 +46,13 @@ packages:
       - 'bed-presence-mk1/base.yaml'
       - 'esphome-common/bluetooth-proxy.yaml'
 
+
+substitutions:
+  left_bed_sensor_name: left
+  left_bed_sensor_friendly_name: Left
+  right_bed_sensor_name: right
+  right_bed_sensor_friendly_name: Right
+
 # See https://github.com/ElevatedSensors/sensor-configs/blob/main/bed-presence-mk1/sensor.yaml for a detailed
 # description of available substitutions.
 #
